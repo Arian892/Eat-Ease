@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="521.0" maxWidth="827.0" minHeight="300" minWidth="400" prefHeight="521.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.EatEase.LoginController">
+   <children>
+      <!-- Add an ImageView for the logo on top of the text box -->
+      <ImageView fx:id="logoImage" fitHeight="249.0" fitWidth="320.0" layoutX="229.0" layoutY="14.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+
+      <Label layoutX="114.0" layoutY="284.0" prefHeight="38.0" prefWidth="104.0" text="      USERNAME" textAlignment="CENTER" />
+      <Label layoutX="96.0" layoutY="349.0" prefHeight="54.0" prefWidth="139.0" text="          PASSWORD" />
+      <TextField fx:id="userText" layoutX="235.0" layoutY="280.0" prefHeight="46.0" prefWidth="307.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordText" layoutX="235.0" layoutY="353.0" prefHeight="46.0" prefWidth="307.0" />
+      <Button fx:id="loginsubmit" layoutX="401.0" layoutY="428.0" mnemonicParsing="false" onAction="#LoginSubmit" prefHeight="26.0" prefWidth="149.0" text="SUBMIT" textFill="#000000ba" />
+      <Button fx:id="loginreset" layoutX="229.0" layoutY="428.0" mnemonicParsing="false" onAction="#LoginReset" prefHeight="26.0" prefWidth="150.0" text="RESET" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restaurant_Client.LoginPageController">
+   <children>
+
+      <ImageView fx:id="logoImage" fitHeight="232.0" fitWidth="263.0" layoutX="232.0" layoutY="14.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+
+      <TextField fx:id="userText" layoutX="218.0" layoutY="286.0" prefHeight="26.0" prefWidth="311.0" />
+      <PasswordField fx:id="passwordText" layoutX="217.0" layoutY="336.0" prefHeight="26.0" prefWidth="311.0" />
+      <Button fx:id="loginsubmit" layoutX="276.0" layoutY="387.0" mnemonicParsing="false" onAction="#LoginSubmit" text="Submit" />
+      <Button fx:id="loginreset" layoutX="438.0" layoutY="387.0" mnemonicParsing="false" onAction="#LoginReset" text="Reset" />
+      <Label layoutX="150.0" layoutY="290.0" prefHeight="18.0" prefWidth="75.0" text="Username" />
+      <Label layoutX="150.0" layoutY="340.0" prefHeight="18.0" prefWidth="52.0" text="Password" />
+   </children>
+</AnchorPane>

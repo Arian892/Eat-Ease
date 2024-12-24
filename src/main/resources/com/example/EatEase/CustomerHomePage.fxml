@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="521.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.EatEase.CustomerHomePageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="521.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="184.0" />
+      <Button fx:id="MyInfoButton" mnemonicParsing="false" onAction="#MyInfoButtonAction" prefHeight="40.0" prefWidth="184.0" text="My Info" />
+      <Button fx:id="LogoutButton" layoutY="155.0" mnemonicParsing="false" onAction="#LogoutAction" prefHeight="40.0" prefWidth="184.0" text="Logout" />
+      <Button fx:id="MyCartButton" layoutY="115.0" mnemonicParsing="false" onAction="#MyCartButtonAction" prefHeight="40.0" prefWidth="184.0" text="My Cart" />
+      <Button fx:id="FoodListButton" layoutY="75.0" mnemonicParsing="false" onAction="#FoodListButtonAction" prefHeight="40.0" prefWidth="184.0" text="Foods" />
+      <Button fx:id="RestaurantButton" layoutX="-1.0" layoutY="37.0" mnemonicParsing="false" onAction="#RestaurantButtonAction" prefHeight="40.0" prefWidth="184.0" text="Restaurants" />
+      <ListView fx:id="AllFoodsListView" layoutX="250.0" layoutY="80.0" prefHeight="403.0" prefWidth="486.0" style="-fx-background-color: white;" />
+      <ListView fx:id="AllRestaurantListView" layoutX="250.0" layoutY="80.0" prefHeight="403.0" prefWidth="486.0" />
+      <ListView fx:id="AllFoodsInRestaurantListView" layoutX="250.0" layoutY="80.0" prefHeight="403.0" prefWidth="486.0" />
+      <ChoiceBox fx:id="RestaurantSearchingOption" layoutX="250.0" layoutY="40.0" prefHeight="26.0" prefWidth="161.0" />
+      <Button fx:id="SearchingButton" layoutX="643.0" layoutY="41.0" mnemonicParsing="false" onAction="#SearchingActionButton" text="Search" textFill="#1b0000" />
+      <TextField fx:id="SearchingByString" layoutX="456.0" layoutY="40.0" />
+      <TextField fx:id="HighPrice" layoutX="553.0" layoutY="39.0" prefHeight="26.0" prefWidth="66.0" />
+      <TextField fx:id="LowPrice" layoutX="449.0" layoutY="40.0" prefHeight="26.0" prefWidth="66.0" />
+      <ChoiceBox fx:id="FoodSearchingOption" layoutX="256.0" layoutY="40.0" prefWidth="150.0" />
+      <Button fx:id="OrderButton" layoutX="433.0" layoutY="439.0" mnemonicParsing="false" onAction="#OrderButtonAction" prefHeight="26.0" prefWidth="120.0" text="Order" />
+      <ChoiceBox fx:id="FoodSearchingInaRestaurant" layoutX="256.0" layoutY="41.0" prefWidth="150.0" />
+      <ListView fx:id="AddToCartFoodListView" layoutX="262.0" layoutY="80.0" prefHeight="342.0" prefWidth="447.0" />
+      <Label fx:id="FoodInCart" layoutX="114.0" layoutY="115.0" prefHeight="18.0" prefWidth="15.0" text="0" />
+      <Label fx:id="TotalCostFoods" layoutX="526.0" layoutY="56.0" prefHeight="18.0" prefWidth="184.0" text="Label" textAlignment="CENTER" />
+      <Label fx:id="TotalFoodInCart" layoutX="252.0" layoutY="57.0" prefHeight="18.0" prefWidth="184.0" text="Label" />
+   </children>
+</AnchorPane>
