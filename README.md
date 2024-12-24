@@ -1,2 +1,2 @@
 # Eat-Ease
-1-2 : CSE 106 Project Eat East 
+JavaFX 1-2 CSE 106 Project Eat Ease 
